@@ -1,0 +1,90 @@
+body {   
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #edc6c6;
+    padding: 20px;
+}
+
+
+.container {
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(63, 192, 37, 0.1);
+    overflow: hidden;
+}
+
+.profile-img {
+    text-align: center;
+}
+
+.profile-img img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-info h2 {
+    color: #1a1b19;
+}
+.profile-info span {
+    font-size: 14px; /* Kích thước chú thích */
+    color: #1cd0f4; /* Màu chú thích */
+    line-height: 0; /* Giảm khoảng cách giữa hai dòng */
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-icons a {
+    margin: 10px 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+.social-icons a img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons a:hover {
+    color: #4267b2; /* Facebook color */
+}
+.buttons {
+    text-align: center;
+    margin-top: 40px;
+}
+.buttons button:nth-child(1){
+   border:1px solid #8E24AA !important;
+   color:#8E24AA;
+   height:40px;
+}
+
+.buttons button:nth-child(1):hover{
+   border:1px solid #8E24AA !important;
+   color:#fff;
+   height:40px;
+   background-color:#8E24AA;
+}
+.buttons button:nth-child(2){
+   border:1px solid #8E24AA !important;
+   color:#8E24AA;
+   height:40px;
+}
+
+.buttons button:nth-child(2):hover{
+   border:1px solid #8E24AA !important;
+   background-color:#8E24AA;
+   color:#fff;
+    height:40px;
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Profile</title>
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" href="Css/profile.css">
+    <link rel="stylesheet" href="Css/header_commom.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v14.0"
+        nonce="vWDw95v7"></script>
+</head>
+
+<body>
+    <div class="container_fluid">
+        <header class="header">
+            <!--  -->
+            <div class="header__main">
+                <ul class="header__main-contact">
+                    <li class="header__main-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="header__main-contact-item-link" href="">0971574238</a>
+                    </li>
+                    <li class="header__main-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a class="header__main-contact-item-link" href="">Hỗ trợ</a>
+                    </li>
+                </ul>
+                <!--  -->
+                <ul class="header_main-list">
+                    <li class="header__main-item"><a href="home.html">Trang chủ</a></li>
+                    <li class="header__main-item"><a href="product.html">Sản Phẩm</a></li>
+                    <li class="header__main-item"><a href="collection.html">Bộ sưu tập</a></li>
+                    <li class="header__main-item"><a href="">Ưu đãi</a></li>
+                    <li class="header__main-item"><a href="blogs.html">Blogs</a></li>
+                    <li class="header__main-item"><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+                <!--  -->
+                <ul class="header__main-fucntion">
+                    <li class="header__main-fucntion-item"><a href=""><i class="fas fa-search"></i></a></li>
+                    <li class="header__main-fucntion-item"><a href="profile.html"><i class="fas fa-user"></i></a></li>
+                    <li class="header__main-fucntion-item"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </header>>
+        <!-- CONTENT -->
+        <div class="content padding-container">
+            <div class="content-asile">
+                <div class="header-asile">
+                    <img class="header-asile-img"
+                        src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg"
+                        alt="">
+                    <div class="header-info-asile">
+                        <h4 class="header-info-name">Nguyễn Duy Minh</h4>
+                        <a href="" class="header-info-asile-edit"> <i class="fa-solid fa-pen"></i> Sửa thông tin</a>
+                    </div>
+                </div>
+                <button class="tablinks active" id="defaultOpen" onclick="openCity(event, 'Info-user')">Thông tin cá
+                    nhân</button>
+                <button class="tablinks" onclick="openCity(event, 'Order')">Đơn hàng</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">Khác</button>
+            </div>
+            <div class="content-main">
+                <div id="Order" class="tabcontent">
+                    <div class="tabcontent-header">
+                        <h3 class="content-item-title">Hoá đơn</h3>
+                        <p>Tổng hợp các hoá đơn của bạn</p>
+                    </div>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th>STT</th>
+                                <th>Người nhận</th>
+                                <th>Ngày mua</th>
+                                <th>Số SP</th>
+                                <th>Thành tiền</th>
+                                <th>Trạng thái</th>
+                                <th>Chi tiết</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Nguyễn Duy Minh
+                                </td>
+                                <td>
+                                    10:10 20/11/2023
+                                </td>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    200000d
+                                </td>
+                                <td>
+                                    <select class="select-status" name="" width="100%" id="">
+                                        <option value="">Đang chờ duyệt</option>
+                                        <option value="">Giao hàng</option>
+                                        <option value="">Huỷ đơn</option>
+                                        <option value="">Đã thanh toán</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn-detail">Chi tiết</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                   Nguyễn Duy Minh
+                                </td>
+                                <td>
+                                    10:10 20/11/2023
+                                </td>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    200000d
+                                </td>
+                                <td>
+                                    <select class="select-status" name="" width="100%" id="">
+                                        <option value="">Đang chờ duyệt</option>
+                                        <option value="">Giao hàng</option>
+                                        <option value="">Huỷ đơn</option>
+                                        <option value="">Đã thanh toán</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn-detail">Chi tiết</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Nguyễn Duy Minh
+                                </td>
+                                <td>
+                                    10:10 20/11/2023
+                                </td>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    200000d
+                                </td>
+                                <td>
+                                    <select class="select-status" name="" width="100%" id="">
+                                        <option value="">Đang chờ duyệt</option>
+                                        <option value="">Giao hàng</option>
+                                        <option value="">Huỷ đơn</option>
+                                        <option value="">Đã thanh toán</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn-detail">Chi tiết</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Nguyễn Duy Minh
+                                </td>
+                                <td>
+                                    10:10 20/11/2023
+                                </td>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    200000d
+                                </td>
+                                <td>
+                                    <select class="select-status" name="" width="100%" id="">
+                                        <option value="">Đang chờ duyệt</option>
+                                        <option value="">Giao hàng</option>
+                                        <option value="">Huỷ đơn</option>
+                                        <option value="">Đã thanh toán</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn-detail">Chi tiết</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1
+                                </td>
+                                <td>
+                                    Nguyễn Duy Minh
+                                </td>
+                                <td>
+                                    10:10 20/11/2023
+                                </td>
+                                <td>
+                                    2
+                                </td>
+                                <td>
+                                    200000d
+                                </td>
+                                <td>
+                                    <select class="select-status" name="" width="100%" id="">
+                                        <option value="">Đang chờ duyệt</option>
+                                        <option value="">Giao hàng</option>
+                                        <option value="">Huỷ đơn</option>
+                                        <option value="">Đã thanh toán</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    <button class="btn-detail">Chi tiết</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h3 class="money-total">Tổng tiền: <span>300000</span></h3>
+                </div>
+                <div id="Info-user" class="tabcontent">
+                    <div class="tabcontent-header">
+                        <h3 class="content-item-title">Thông tin cá nhân</h3>
+                        <p>Thông tin cá nhân của bạn</p>
+                    </div>
+                    <form class="form-edit-info-user">
+                        <div class="form-grid-input">
+                            <div class="list-input-info">
+                                <input type="text" class="input-contact" placeholder="Tên của bạn ">
+                                <input type="text" class="input-contact" placeholder="Email của bạn">
+                                <input type="text" class="input-contact" placeholder="Password của bạn">
+                                <input type="text" class="input-contact" placeholder="Địa chỉ của bạn ">
+                                <input type="text" class="input-contact" placeholder="Số điện thoại của bạn">
+                            </div>
+                            <div class="wrapper-image">
+                                <div class="imgae-box">
+                                    <img src="https://thumbs.dreamstime.com/b/male-avatar-icon-flat-style-male-user-icon-cartoon-man-avatar-hipster-vector-stock-91462914.jpg" alt="">
+                                </div>
+                                <br>
+                               <div class=""> 
+                                <label class="file-name" for="file">Chọn ảnh</label>
+                                <input hidden id="file"  type="file" ></div>
+                                <p class="file-name-note">Lưu ý : Chọn ảnh jpg , png </p>
+                            </div>
+                        </div>
+                        <button class="btn btn-dark" type="submit">Lưu thay đổi</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="footer__bag">
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Về chúng tôi</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Câu chuyện thương hiệu</a></li>
+                        <li class="footer__contact-item"><a href="">Tin tức</a></li>
+                        <li class="footer__contact-item"><a href="">Đôi cánh yêu thương</a></li>
+                        <li class="footer__contact-item"><a href="">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <!--  -->
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Chính sách bán hàng</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Chính sách đổi hàng</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách bảo hành</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách hội viên</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách giao nhận</a></li>
+                        <li class="footer__contact-item"><a href="">Hưỡng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+                <!--  -->
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Tư vẫn</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Tư vẫn phong cách</a></li>
+                        <li class="footer__contact-item"><a href="">Tư vẫn chọn size</a></li>
+                        <li class="footer__contact-item"><a href="">Hồi đáp</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Kết nối với chúng tôi</h4>
+
+                    <ul class="footer__contact-icon-list">
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+
+                    <a href=""><img src="assets/img/dathongbao.png" alt="" class="footer__contact-img"></a>
+                </div>
+            </div>
+            <div class="footer__link">
+                <p>Copyright © 2023 Long Oanh Interior. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop()) {
+                    $('header').addClass('header__sub');
+                } else {
+                    $('header').removeClass('header__sub');
+                }
+            });
+        });
+    </script>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+<script >
+    $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop()) {
+            $('.list-contact-icon-box').css("transform", "translateX(0px)");
+            $('.list-contact-icon-box').css("transition", "all ease-in-out 0.3s");
+            $('#backTop').fadeIn();
+        } else {
+            $('#backTop').fadeOut();
+            $('.list-contact-icon-box').css("transition", "all ease-in-out 0.3s");
+            $('.list-contact-icon-box').css("transform", "translateX(-100px)");
+            
+        }
+    });
+    $('#backTop').click(function() {
+        $('html , body').animate({
+            scrollTop: 0
+        }, 2000);
+    });
+});
+</script>
+<script>function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+  
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  document.getElementById("defaultOpen").click();</script>
+
+</html>

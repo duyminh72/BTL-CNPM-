@@ -1,0 +1,327 @@
+/* -----HEADER---- */
+.img {
+    width: 100%;
+}
+
+.header {
+    background-color: var(--black-color);
+    height: 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.header i[class*="fa"] {
+    color: var(--white-color);
+}
+
+.header__main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px 0px;
+}
+
+.header__main-img {
+    width: 150px;
+}
+
+.header_main-list {
+    margin-left: -90px;
+}
+
+.header__main-contact {
+    margin-left: -30px;
+}
+
+.header_main-list,
+.header__main-contact,
+.header__main-fucntion {
+    display: flex;
+    list-style-type: none;
+}
+
+.header__main-contact-item:first-child {
+    margin-left: -10px;
+}
+
+.header__main-contact-item,
+.header__main-fucntion-item {
+    padding: 0px 10px;
+}
+
+.header__main-item {
+    padding: 0px 20px;
+}
+
+.header__main-contact-item a,
+.header__main-item a {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 17px;
+}
+
+/* --------CONTENT------- */
+.content {
+    margin-top: 50px;
+}
+
+.section__header {
+    position: fixed;
+    background-color: #fff;
+    top: 50;
+    right: 0;
+    left: 0;
+}
+
+.section__header-bag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    padding: 0px 120px;
+}
+
+.section__header-list-product {
+    display: flex;
+    list-style-type: none;
+}
+
+.section__header-list-product,
+.section__header-addess {
+    padding-top: 15px;
+}
+
+
+.section__header-list-item {
+    padding: 0px 5px;
+}
+
+.section__header-list-item a {
+    text-decoration: none;
+    color: var(--black-color);
+    font-size: 15px;
+}
+
+.section__header-select {
+    height: 26px;
+    font-size: 13px;
+    width: 130px;
+}
+
+/* ------SECTION_PRODUCT--- */
+
+.product__details {
+    /* margin-top: 150px; */
+    padding-top: 70px;
+    width: 1200px;
+    max-width: 100%;
+    margin: auto;
+}
+
+.product__details-menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.product__details-item {
+    padding: 0px 20px;
+}
+
+.product__details-item a {
+    text-decoration: none;
+    color: rgb(146, 143, 143);
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.product__infor {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 50px;
+}
+
+.product__infor-item-img {
+    width: 80%;
+    margin: 0 auto;
+    height: 300px;
+   
+}
+
+.product__infor-item-img:hover{
+    transform: scale(1.1);
+    transition: all ease 0.3s;
+ }
+ 
+
+.product__infor-item {
+    text-align: center;
+}
+
+.product__infor-item-name {
+    font-size: 15px;
+    margin: 15px 0px;
+}
+
+.product__infor-item-price {
+    font-weight: 600;
+}
+
+.button__bag {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product__details-item-sub a {
+    font-weight: 600;
+    color: #444;
+    text-decoration: underline;
+}
+
+.review__more {
+    border: none;
+    background-color: #000;
+    color: var(--white-color);
+    font-size: 14px;
+    padding: 4px 5px;
+}
+/* ------- */
+.icon-open-filer-all {
+    cursor: pointer;
+}
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    box-shadow: 5px 0 5px -5px #333;
+    background-color: white;
+    /* Black fallback color */
+    /* Black w/opacity */
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.2s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.overlay-content {
+    margin-top: 40px;
+}
+
+/* Position the content inside the overlay */
+
+/* The navigation links inside the overlay */
+
+/* When you mouse over the navigation links, change their color */
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    right: 20px;
+    font-size: 40px;
+    color: #555;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+
+.accordion {
+    color: #555;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 0.9rem;
+    background-color: #ffff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 18px;
+    /* display: none; */
+    font-weight: normal;
+    max-height: 200px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 0px 0px 0px 20px;
+}
+
+.panel ul {
+    list-style-type: none;
+}
+
+.panel ul a {
+    text-decoration: none;
+    color: var(--color-text);
+    margin-bottom: 15px;
+}
+
+.panel ul li {
+    margin-bottom: 15px;
+}
+
+.panel ul a i {
+    margin-right: 10px;
+}
+
+.accordion:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 0.5rem;
+    color: #777;
+    float: right;
+    margin: 3px 10px 0px 0px;
+}
+
+.active:after {
+    content: "\2796";
+}
+
+
+
+
+/* ------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.section__footer {
+    border-top: 1px solid #ccc;
+}

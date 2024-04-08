@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng</title>
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" href="Css/header_commom.css">
+    <link rel="stylesheet" href="Css/cart.css">
+    <link rel="stylesheet" href="Css/pay.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container_fluid">
+        <header class="header">
+            <!--  -->
+            <div class="header__main">
+                <ul class="header__main-contact">
+                    <li class="header__main-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="header__main-contact-item-link" href="">0914922682</a>
+                    </li>
+                    <li class="header__main-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a class="header__main-contact-item-link" href="">Hỗ trợ</a>
+                    </li>
+                </ul>
+                <!--  -->
+                <ul class="header_main-list">
+                    <li class="header__main-item"><a href="home.html">Trang chủ</a></li>
+                    <li class="header__main-item"><a href="product.html">Sản Phẩm</a></li>
+                    <li class="header__main-item"><a href="collection.html">Bộ sưu tập</a></li>
+                    <li class="header__main-item"><a href="">Ưu đãi</a></li>
+                    <li class="header__main-item"><a href="blogs.html">Blogs</a></li>
+                    <li class="header__main-item"><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+                <!--  -->
+                <ul class="header__main-fucntion">
+                    <li class="header__main-fucntion-item"><a href=""><i class="fas fa-search"></i></a></li>
+                    <li class="header__main-fucntion-item"><a href="profile.html"><i class="fas fa-user"></i></a></li>
+                    <li class="header__main-fucntion-item"><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="content text-center">
+            <h3 class="title-page-name commom-title text-center">Giỏ hàng</h3>
+            <p class="text-center color-text"> Giỏ hàng của bạn , hãy chọn những thứ mình muốn </p>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <th>STT</th>
+                    <th>Sản phẩm</th>
+                    <th>Thông tin sản phẩm</th>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                    <th>Tổng tiền</th>
+                    <th>Xoá</th>
+                </thead>
+                <tbody class="table-content">
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <img class="cart_img" src="assets/img/tuketivi.jpg" alt="">
+                            <p class="product_name">Tủ kệ Tivi PL OYL086</p>
+                        </td>
+                        <td class="cart_name-box">
+                            <div class="product_cart-info-rigth">
+                                <ul class="product_atribute-list">
+                                    <li>Kích thước: 160x140x120(cm)</li>
+                                    <li>Màu sắc: Nâu</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="minus btn btn-light"><i class="fa-solid fa-minus"></i></button>
+                                <input class="quantity"
+                                    style="padding: 3px; border: 1px solid lightgray;border-radius: 3px;" min="0"
+                                    name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    class="plus btn btn-light"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>800.000 đ</td>
+                        <td>800.000 đ</td>
+                        <td>
+                            <a href="" class="btn btn-secondary"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <img class="cart_img" src="assets/img/ghế đôn.jpg" alt="">
+                            <p class="product_name">Ghế đôn PL OYL979</p>
+                        </td>
+                        <td class="cart_name-box">
+                            <div class="product_cart-info-rigth">
+                                <ul class="product_atribute-list">
+                                    <li>Kích thước: 40x40x50(cm)</li>
+                                    <li>Màu sắc: Nâu</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="minus btn btn-light"><i class="fa-solid fa-minus"></i></button>
+                                <input class="quantity"
+                                    style="padding: 3px; border: 1px solid lightgray;border-radius: 3px;" min="0"
+                                    name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    class="plus btn btn-light"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>300.000 đ</td>
+                        <td>300.000 đ</td>
+                        <td>
+                            <a href="" class="btn btn-secondary"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <img class="cart_img" src="assets/img/kệ sách.jpg" alt="">
+                            <p class="product_name">Kệ sách PL OYL879</p>
+                        </td>
+                        <td class="cart_name-box">
+                            <div class="product_cart-info-rigth">
+                                <ul class="product_atribute-list">
+                                    <li>Kích thước: 140x70x160(cm)</li>
+                                    <li>Màu sắc: Nâu Xám</li>
+                                </ul>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="number-input">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()"
+                                    class="minus btn btn-light"><i class="fa-solid fa-minus"></i></button>
+                                <input class="quantity"
+                                    style="padding: 3px; border: 1px solid lightgray;border-radius: 3px;" min="0"
+                                    name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    class="plus btn btn-light"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                        </td>
+                        <td>1.000.000 đ</td>
+                        <td>1.000.000 đ</td>
+                        <td>
+                            <a href="" class="btn btn-secondary"><i class="fa-solid fa-trash-can"></i></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="btn-table-footer">
+                <button class="btn btn-dark"><a href="home.html" style="text-decoration: none; color: white;"><i
+                            class="fa-solid fa-arrow-left"></i>Tiếp tục mua hàng</a></button>
+                <button class="btn btn-dark"><a href="" style="text-decoration: none; color: white;">Cập nhật giỏ
+                        hàng</a></button>
+            </div>
+            <div class="total-money">
+                <div class="order-box">
+                    <h3 class="title-form-order">Cộng giỏ hàng</h3>
+                    <h5 class="plus-cart">Tạm tính</h5>
+                    <div class="plus-cart-provisional">
+                        <h6>Tủ kệ Tivi PL OYL086 (1)</h6>
+                        <h6>800.000 đ</h6>
+                    </div>
+                    <div class="plus-cart-provisional">
+                        <h6>Ghế đôn PL OYL979 (1)</h6>
+                        <h6>300.000 đ</h6>
+                    </div>
+                    <div class="plus-cart-provisional">
+                        <h6>Kệ sách PL OYL879 (1)</h6>
+                        <h6>1.000.000 đ</h6>
+                    </div>
+                    <div class="plus-cart-provisional">
+                        <h4 class="total-name" style="color: #8E0007">Tổng tiền</h4>
+                        <h4 class="total-price">2.100.000 đ</h4>
+                    </div>
+                    <a href="pay.html"><button class="btn btn-dark" style="padding: 5px 25px; margin-top: 10px;">Tiến hành thanh toán</button></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="section__footer">
+                <div class="section__footer-bag">
+                    <label class="section__footer-label" for="">Theo dõi bản tin của chúng tôi</label>
+                    <form action="" class="section__footer-form">
+                        <input class="section__footer-form-input" type="text" placeholder="Địa chỉ email">
+                        <button class="section__footer-form-submit">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bag">
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Về chúng tôi</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Câu chuyện thương hiệu</a></li>
+                        <li class="footer__contact-item"><a href="">Tin tức</a></li>
+                        <li class="footer__contact-item"><a href="">Đôi cánh yêu thương</a></li>
+                        <li class="footer__contact-item"><a href="">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <!--  -->
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Chính sách bán hàng</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Chính sách đổi hàng</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách bảo hành</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách hội viên</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách giao nhận</a></li>
+                        <li class="footer__contact-item"><a href="">Hưỡng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+                <!--  -->
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Tư vẫn</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Tư vẫn phong cách</a></li>
+                        <li class="footer__contact-item"><a href="">Tư vẫn chọn size</a></li>
+                        <li class="footer__contact-item"><a href="">Hồi đáp</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Kết nối với chúng tôi</h4>
+                    <ul class="footer__contact-icon-list">
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <a href=""><img src="assets/img/dathongbao.png" alt="" class="footer__contact-img"></a>
+                </div>
+            </div>
+            <div class="footer__link">
+                <p>Copyright © 2020 Long Oanh Interior. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!doctype html>
+<html lang="en">
+
+<head>

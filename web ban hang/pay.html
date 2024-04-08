@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán</title>
+    <link rel="stylesheet" href="Css/base.css">
+    <link rel="stylesheet" href="Css/header_commom.css">
+    <link rel="stylesheet" href="Css/pay.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container_fluid">
+        <header class="header">
+            <!--  -->
+            <div class="header__main">
+                <ul class="header__main-contact">
+                    <li class="header__main-contact-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <a class="header__main-contact-item-link" href="">0914922682</a>
+                    </li>
+                    <li class="header__main-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a class="header__main-contact-item-link" href="">Hỗ trợ</a>
+                    </li>
+                </ul>
+                <!--  -->
+                <ul class="header_main-list">
+                    <li class="header__main-item"><a href="home.html">Trang chủ</a></li>
+                    <li class="header__main-item"><a href="product.html">Sản Phẩm</a></li>
+                    <li class="header__main-item"><a href="collection.html">Bộ sưu tập</a></li>
+                    <li class="header__main-item"><a href="">Ưu đãi</a></li>
+                    <li class="header__main-item"><a href="blogs.html">Blogs</a></li>
+                    <li class="header__main-item"><a href="contact.html">Liên Hệ</a></li>
+                </ul>
+                <!--  -->
+                <ul class="header__main-fucntion">
+                    <li class="header__main-fucntion-item"><a href=""><i class="fas fa-search"></i></a></li>
+                    <li class="header__main-fucntion-item"><a href="profile.html"><i class="fas fa-user"></i></a></li>
+                    <li class="header__main-fucntion-item"><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- CONTENT -->
+        <div class="content text-center">
+            <h3 class="title-page-name commom-title text-center">Thanh toán</h3>
+            <p class="text-center color-text"> Giỏ hàng của bạn , hãy chọn những thứ mình muốn </p>
+            <form class="cart-box">
+                <div class="">
+                    <h4 class="title-form">Điền thông tin của bạn</h4>
+                    <input type="text" class="input-contact" placeholder="Tên của bạn ">
+                    <input type="text" class="input-contact" placeholder="Email của bạn">
+                    <div class="form-grid-input">
+                        <input type="text" class="input-contact" placeholder="Địa chỉ của bạn ">
+                        <input type="text" class="input-contact" placeholder="Số điện thoại của bạn">
+                    </div>
+                    <textarea class="input-contact-textarea" placeholder="Nội dung" name=""></textarea>
+                </div>
+                <div class="total-money">
+                    <div class="order-box">
+                        <h3 class="title-form-order">Đơn hàng</h3>
+                        <h5 class="plus-cart">Sản phẩm</h5>
+                        <div class="plus-cart-provisional">
+                            <h6>Tủ kệ Tivi PL OYL086 (1)</h6>
+                            <h6>800.000 đ</h6>
+                        </div>
+                        <div class="plus-cart-provisional">
+                            <h6>Ghế đôn PL OYL979 (1)</h6>
+                            <h6>300.000 đ</h6>
+                        </div>
+                        <div class="plus-cart-provisional">
+                            <h6>Kệ sách PL OYL879 (1)</h6>
+                            <h6>1.000.000 đ</h6>
+                        </div>
+                        <div class="plus-cart-provisional">
+                            <h4 class="total-name" style="color: #8E0007">Tổng tiền</h4>
+                            <h4 class="total-price">2.100.000 đ</h4>
+                        </div>
+                </div>
+            </form>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="section__footer">
+                <div class="section__footer-bag">
+                    <label class="section__footer-label" for="">Theo dõi bản tin của chúng tôi</label>
+                    <form action="" class="section__footer-form">
+                        <input class="section__footer-form-input" type="text" placeholder="Địa chỉ email">
+                        <button class="section__footer-form-submit">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bag">
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Về chúng tôi</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Câu chuyện thương hiệu</a></li>
+                        <li class="footer__contact-item"><a href="">Tin tức</a></li>
+                        <li class="footer__contact-item"><a href="">Đôi cánh yêu thương</a></li>
+                        <li class="footer__contact-item"><a href="">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <!--  -->
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Chính sách bán hàng</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Chính sách đổi hàng</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách bảo hành</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách hội viên</a></li>
+                        <li class="footer__contact-item"><a href="">Chính sách giao nhận</a></li>
+                        <li class="footer__contact-item"><a href="">Hưỡng dẫn mua hàng</a></li>
+                    </ul>
+                </div>
+                <!--  -->
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Tư vẫn</h4>
+                    <ul class="footer__contact-list">
+                        <li class="footer__contact-item"><a href="">Tư vẫn phong cách</a></li>
+                        <li class="footer__contact-item"><a href="">Tư vẫn chọn size</a></li>
+                        <li class="footer__contact-item"><a href="">Hồi đáp</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contact">
+                    <h4 class="footer__contact-title">Kết nối với chúng tôi</h4>
+                    <ul class="footer__contact-icon-list">
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li class="footer__contact-icon-item"><a href=""><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <a href=""><img src="assets/img/dathongbao.png" alt="" class="footer__contact-img"></a>
+                </div>
+            </div>
+            <div class="footer__link">
+                <p>Copyright © 2020 Long Oanh Interior. All Rights Reserved</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!doctype html>
+<html lang="en">
+
+<head>
